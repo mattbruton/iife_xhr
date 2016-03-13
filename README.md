@@ -11,5 +11,5 @@
 
 ### Screenshots:
 
-![Screenshot of IIFF-XHR](https://raw.githubusercontent.com/mattbruton/iife_xhr/master/Screenshots/XHR-IIFESS.png)
+![Screenshot of IIFF-XHR](https://raw.githubusercontent.com/mattbruton/iife_xhr/master/Screenshots/IIFE-XHRSS.png)
 
