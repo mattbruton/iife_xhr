@@ -5,7 +5,7 @@ var Predator = (function () {
   return {
 
 
-    loadCarnivores: function (listCarnivores) {
+    loadCarnivores: function (callbackToInvoke) {
       var loader = new XMLHttpRequest();
       //Set the value of the private array
       loader.addEventListener("load", function () {
@@ -13,25 +13,27 @@ var Predator = (function () {
         // Invoke the callback function so that the caller knows
         // that the process is complete. Make sure to pass the 
         // carnivore array as an argument.
-        Predator.listCarnivores(carnivores);
+        listCarnivores(carnivores);
       });
       loader.open("GET", "carnivores.json");
       loader.send();
     },
 
-    loadHerbivores: function (listHerbivores) {
+    loadHerbivores: function (callbackToInvoke) {
       var loader = new XMLHttpRequest();
       loader.addEventListener("load", function () {
         herbivores = JSON.parse(this.responseText).herbivores;
         var herbList = document.getElementById('herbList');
         var herbString = "";
-        Predator.listHerbivores(herbivores);
+        listHerbivores(herbivores);
       });
       loader.open("GET", "herbivores.json");
       loader.send();
-    },
+    }
+  };
+}());
 
-    listCarnivores: function(carnivores) {
+listCarnivores = function(carnivores) {
       var carnList = document.getElementById('carnList');
         var carnString = "";
         for(var i = 0; i < carnivores.length; i++) {
@@ -40,9 +42,9 @@ var Predator = (function () {
           carnString += `<h4>Location: ${currentCarn.location}</h4>`;
           carnList.innerHTML += carnString;
         }
-    },
+    }
 
-    listHerbivores: function(herbivores) {
+listHerbivores = function(herbivores) {
       var herbList = document.getElementById('herbList');
         var herbString = "";
         for(var i = 0; i < herbivores.length; i++) {
@@ -52,8 +54,6 @@ var Predator = (function () {
           herbList.innerHTML += herbString;
          };
     }
-  };
-}());
 
 //Create two JSON files. One should contain an array of carnivores, and the other should contain an array of herbivores. --DONE
 //Create an IIFE with the name of Predator. --DONE
