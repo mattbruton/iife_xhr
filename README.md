@@ -11,5 +11,5 @@
 
 ### Screenshots:
 
-![Screenshot of IIFF-XHR](https://raw.githubusercontent.com/mattbruton/musichistory-boilerplate/master/Screenshots/MusicHistorySS.png)
+![Screenshot of IIFF-XHR](https://raw.githubusercontent.com/mattbruton/iife_xhr/master/Screenshots/XHR-IIFESS.png)
 
