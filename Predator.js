@@ -41,8 +41,8 @@ listCarnivores = function(carnivores) {
           carnString = `<h2>Animal: ${currentCarn.animal}</h2>`;
           carnString += `<h4>Location: ${currentCarn.location}</h4>`;
           carnList.innerHTML += carnString;
-        }
-    }
+        };
+    };
 
 listHerbivores = function(herbivores) {
       var herbList = document.getElementById('herbList');
@@ -53,7 +53,7 @@ listHerbivores = function(herbivores) {
           herbString += `<h4>Location: ${currentHerb.location}</h4>`;
           herbList.innerHTML += herbString;
          };
-    }
+    };
 
 //Create two JSON files. One should contain an array of carnivores, and the other should contain an array of herbivores. --DONE
 //Create an IIFE with the name of Predator. --DONE
