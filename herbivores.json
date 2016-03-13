@@ -1,0 +1,20 @@
+{
+  "herbivores": [
+    {
+      "animal":"goat",
+      "location":"farm"
+    },
+    {
+      "animal":"llama",
+      "location":"farm"
+    },
+    {
+      "animal":"cow",
+      "location":"farm"
+    },
+    {
+      "animal":"impala",
+      "location":"savannah"
+    }
+  ]
+}

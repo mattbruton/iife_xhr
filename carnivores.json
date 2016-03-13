@@ -1,0 +1,20 @@
+{
+  "carnivores": [
+    {
+      "animal":"wolf",
+      "location":"woods"
+    },
+    {
+      "animal":"tiger",
+      "location":"jungle"
+    },
+    {
+      "animal":"bearman",
+      "location":"behind you"
+    },
+    {
+      "animal":"puma",
+      "location":"jungle"
+    }
+  ]
+}
